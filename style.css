@@ -127,7 +127,6 @@ body{
     flex-wrap: wrap;
     gap: 35px;
     justify-content: space-between;
-    margin: 10px;
 }
 .search-values{
     background-color: 
