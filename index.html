@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- first page html code -->
+    <div class="main-div">
+        <div class="left-div">
+            <h2 class="application">Post offie Application.</h2>
+            <p>This Application Allows you to extract information about the nearest Post Offices, based on your location.</p>
+            <img src="undraw_messenger_re_8bky 1.png" alt="">
+        </div>
+        <div class="right-div">
+            <h2 id="current-ip">Your Current IP Address is 123456</h2>
+            <button class="get-started">Get Started</button>
+        </div>
+    </div>
+    <!-- second page html code -->
+    <div class="major-div-two">
+        <p class="ip-address">IP Address : </p>
+        <br>
+        <!-- user other details -->
+        <div class="other-details">
+            <!-- <div class="location-details">
+                <p class="lat">Lat: </p>
+                <p class="lat">Long: </p>
+            </div>
+            <div class="city-region">
+                <p class="city">City: </p>
+                <p class="reg">Region: </p>
+            </div>
+            <div class="org-host">
+                <p class="org">Organization: </p>
+                <p class="host">Host: </p>
+            </div> -->
+        </div>
+        <br>
+        <!-- map div to display the map -->
+        <div class="map-div">
+            <div id="map"></div>
+
+        </div>
+        <br>
+        <!-- more imformation div  -->
+        <div class="more-information-div">
+            <!-- <h1 class="more">More information About You</h1>
+            <br>
+            <br>
+            <p class="Time-Zone">Time Zone: </p>
+            <p class="date">Date And Time: </p>
+            <p class="pin">Pincode: </p>
+            <p class="message">Message: Number of pincode(s) found:  </p> -->
+        </div>
+        <br>
+        <div class="post-office">
+            <h1 class="post">Post office Near You</h1>
+            <br>
+            <br>
+            <p class="search-tag"><img id="search-btn" src="Vector.png" alt=""> <input type="text" id="search-input" placeholder="Search By Name"></p>
+        </div>
+        <br>
+        <br>
+        <!-- post office display div and search display div -->
+        <div class="search-details-div">
+            <!-- <div class="search-values">
+                <p>Name</p>
+                <p>Brach Type</p>
+                <p>Delivery Status</p>
+                <p>District</p>
+                <p>Division</p>
+            </div> -->
+            
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrbFMOIGCV96cHmwFcXJwFaZZItbLqPW8&callback=initMap" async defer></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
