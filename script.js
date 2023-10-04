@@ -43,7 +43,7 @@ async function getUserLocation(IP){
         mainDivTwo.style.display = "block"; 
     }
     catch(e){
-        console.log(e);
+        alert(e);
     }
 }
 
@@ -140,7 +140,7 @@ function getCurrentTime(timezone){
         return result;
     }
     catch(e){
-        console.log(e)
+        alert(e);
     }
    
  }
@@ -168,7 +168,7 @@ function getCurrentTime(timezone){
 
     }
     catch(e){
-        console.log(e);
+        alert(e);
     }
 
 
@@ -201,7 +201,7 @@ function getCurrentTime(timezone){
 
     }
     catch(e){
-        console.log(e)
+        alert(e)
     }
 
 
