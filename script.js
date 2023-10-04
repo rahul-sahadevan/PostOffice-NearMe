@@ -6,6 +6,8 @@ const searchInput = document.getElementById("search-input");
 
 const searchBtn = document.getElementById("search-btn");
 const searchDiv = document.querySelector(".search-details-div");
+const searchResultDiv = document.querySelector(".search-result-div");
+const searchResult = document.querySelector(".search-result");
 
 // retriving the IP Address of the user 
 
@@ -32,6 +34,7 @@ async function getUserLocation(IP){
             searchDiv.style.display = "none";
             renderPostOffice(result.postal,searchInput.value)
             searchDiv.style.display = "flex";
+            searchResult.style.display = "block";
         })
         let latitude = result.latitude;
         let longitude = result.longitude;
@@ -190,7 +193,7 @@ function getCurrentTime(timezone){
                     <p>Distrit: ${element.District}</p>
                     <p>Divivsion: ${element.Division}</p>
                 `
-                searchDiv.append(searchValDiv);
+                searchResultDiv.append(searchValDiv);
             }
         });
         console.log(postOffice)

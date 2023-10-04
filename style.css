@@ -74,7 +74,7 @@ body{
     background-color: black;
     display: none;
 }
-.ip-address{
+.ip-address,.search-result,.all-result{
     font-size: 34px;
     color: #B8BCCC;
 }
@@ -122,7 +122,7 @@ body{
     font-weight: 700;
     line-height: 60px;
 }
-.search-details-div{
+.search-details-div,.search-result-div{
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
@@ -135,6 +135,9 @@ body{
     padding: 15px;
     width: 45%;
     border-radius: 10px;
+}
+.search-result{
+    display: none;
 }
 
 
